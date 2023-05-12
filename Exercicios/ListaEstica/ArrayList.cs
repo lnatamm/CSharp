@@ -49,5 +49,24 @@ namespace C_.Exercicios.ListaEstica
             }
         }
 
+        public void add(int pos, T data)
+        {
+
+            try
+            {
+                for(int i = count; i > pos; i--)
+                {
+                    array[i] = array[i - 1];
+                }
+                array[pos] = data;
+                count++;
+            }
+            catch (IndexOutOfRangeException e) { 
+                createEspace();
+                add(pos, data);
+            }
+
+        }
+
     }
 }
