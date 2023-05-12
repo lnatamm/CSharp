@@ -68,5 +68,20 @@ namespace C_.Exercicios.ListaEstica
 
         }
 
+        
+        public override string ToString()
+        {
+            String s = "[";
+
+            for(int i = 0; i < count - 1; i++)
+            {
+                s += array[i] + ", ";
+            }
+
+            s += array[count - 1];
+
+            return s + "]";
+        }
+
     }
 }
