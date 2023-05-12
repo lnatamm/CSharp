@@ -9,12 +9,4 @@
     <StartupObject></StartupObject>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Compile Remove="Exercicios\ALendaDeFlaviousJosephus\Programa.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="Exercicios\ALendaDeFlaviousJosephus\Programa.cs" />
-  </ItemGroup>
-
 </Project>
