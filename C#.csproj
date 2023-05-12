@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -7,63 +7,5 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Folder Include="Exercicios\ALendaDeFlaviousJosephus\" />
-    <Folder Include="Exercicios\BalancoDeParenteseI\" />
-    <Folder Include="Exercicios\BatalhaDePomekons\" />
-    <Folder Include="Exercicios\BobConduite\" />
-    <Folder Include="Exercicios\CalculadoraDePizza\" />
-    <Folder Include="Exercicios\Camisetas\" />
-    <Folder Include="Exercicios\ColecaoDePomekons\" />
-    <Folder Include="Exercicios\ExameGeral\" />
-    <Folder Include="Exercicios\FalhaNoMotor\" />
-    <Folder Include="Exercicios\FibonacciQuantasChamadas\" />
-    <Folder Include="Exercicios\Figurinhas\" />
-    <Folder Include="Exercicios\Fila\" />
-    <Folder Include="Exercicios\FilaDinamica\" />
-    <Folder Include="Exercicios\FilaDinamicaDePrioridadeNaoOrdenada\" />
-    <Folder Include="Exercicios\FilaDinamicaDePrioridadeOrdenada\" />
-    <Folder Include="Exercicios\FilaDoRecreio\" />
-    <Folder Include="Exercicios\FilaEstatica\" />
-    <Folder Include="Exercicios\HeapMaximo\" />
-    <Folder Include="Exercicios\InfixaParaPosfixa\" />
-    <Folder Include="Exercicios\JogandoCartasFora\" />
-    <Folder Include="Exercicios\JogoAniversario\" />
-    <Folder Include="Exercicios\Lanche\" />
-    <Folder Include="Exercicios\ListaDeCompras\" />
-    <Folder Include="Exercicios\ListaDeNomes\" />
-    <Folder Include="Exercicios\ListaDinamica\" />
-    <Folder Include="Exercicios\ListaDinamicaCircular\" />
-    <Folder Include="Exercicios\ListaDinamicaDuplamenteEncadeada\" />
-    <Folder Include="Exercicios\ListaDinamicaDuplamenteEncadeadaCircular\" />
-    <Folder Include="Exercicios\ListaDinamicaDuplamenteEncadeadaOrdenada\" />
-    <Folder Include="Exercicios\ListaDinamicaDuplamenteEncadeadaOrdenadaCircular\" />
-    <Folder Include="Exercicios\ListaDinamicaOrdenada\" />
-    <Folder Include="Exercicios\ListaDinamicaOrdenadaCircular\" />
-    <Folder Include="Exercicios\ListaEstica\" />
-    <Folder Include="Exercicios\ListaRecursividade\" />
-    <Folder Include="Exercicios\MultiploDe13\" />
-    <Folder Include="Exercicios\NotasEMoedas\" />
-    <Folder Include="Exercicios\VariasNotasComValidacao\" />
-    <Folder Include="Exercicios\ValidadorDeSenhas\" />
-    <Folder Include="Exercicios\TuristasNoParqueHuacachina\" />
-    <Folder Include="Exercicios\Trilhos\" />
-    <Folder Include="Exercicios\Televisao\" />
-    <Folder Include="Exercicios\SomaDeImparesCosecutivosII\" />
-    <Folder Include="Exercicios\Sequencia\" />
-    <Folder Include="Exercicios\SaltosOrnamentais\" />
-    <Folder Include="Exercicios\RelogioAntigo\" />
-    <Folder Include="Exercicios\QuadradoEAoCubo\" />
-    <Folder Include="Exercicios\PulaSapo\" />
-    <Folder Include="Exercicios\PilhaDinamica\" />
-    <Folder Include="Exercicios\OMaior\" />
-    <Folder Include="Provas\ProvaProva\" />
-    <Folder Include="Provas\ProvaContaBanco\" />
-    <Folder Include="Provas\ProvaAviao\" />
-    <Folder Include="Provas\ProvaAgendaMedico\" />
-    <Folder Include="Trabalhos\CalculadoraProposicional\" />
-    <Folder Include="Trabalhos\BibliotecaDeMatrizes\" />
-  </ItemGroup>
 
 </Project>
