@@ -6,7 +6,7 @@
     <RootNamespace>C_</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject></StartupObject>
+    <StartupObject>C_.Exercicios.ListaEstica.Teste</StartupObject>
   </PropertyGroup>
 
 </Project>
