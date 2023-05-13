@@ -21,7 +21,7 @@ namespace C_.Exercicios.ListaEstica
 
         }
 
-        private void createEspace()
+        private void CreateEspace()
         {
 
             T[] aux = array;
@@ -35,7 +35,7 @@ namespace C_.Exercicios.ListaEstica
 
         }
 
-        public void add(T data)
+        public void Add(T data)
         {
             try
             {
@@ -44,12 +44,12 @@ namespace C_.Exercicios.ListaEstica
             }
             catch(IndexOutOfRangeException e)
             {
-                createEspace();
-                add(data);
+                CreateEspace();
+                Add(data);
             }
         }
 
-        public void add(int pos, T data)
+        public void Add(int pos, T data)
         {
 
             try
@@ -62,8 +62,8 @@ namespace C_.Exercicios.ListaEstica
                 count++;
             }
             catch (IndexOutOfRangeException e) { 
-                createEspace();
-                add(pos, data);
+                CreateEspace();
+                Add(pos, data);
             }
 
         }
