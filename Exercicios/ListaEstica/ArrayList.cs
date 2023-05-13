@@ -130,6 +130,11 @@ namespace C_.Exercicios.ListaEstica
             }
         }
 
+        public T Get(int i)
+        {
+            return array[i];
+        }
+
         public override string ToString()
         {
             String s = "[";
