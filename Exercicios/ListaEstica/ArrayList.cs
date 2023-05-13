@@ -77,6 +77,18 @@ namespace C_.Exercicios.ListaEstica
         {
             count = 0;
         }
+
+        public bool Contains(T data)
+        {
+            for(int i = 0; i < count; i++)
+            {
+                if (array[i].Equals(data))
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
         
         public override string ToString()
         {
