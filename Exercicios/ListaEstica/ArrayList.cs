@@ -68,6 +68,10 @@ namespace C_.Exercicios.ListaEstica
 
         }
 
+        public int Count()
+        {
+            return count;
+        }
         
         public override string ToString()
         {
