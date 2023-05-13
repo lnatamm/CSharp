@@ -135,6 +135,18 @@ namespace C_.Exercicios.ListaEstica
             return array[i];
         }
 
+        public int IndexOf(T data)
+        {
+            for(int i = 0; i < count; i++)
+            {
+                if (array[i].Equals(data))
+                {
+                    return i;
+                }
+            }
+            return -1;
+        }
+
         public override string ToString()
         {
             String s = "[";
