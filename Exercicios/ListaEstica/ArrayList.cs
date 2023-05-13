@@ -72,6 +72,11 @@ namespace C_.Exercicios.ListaEstica
         {
             return count;
         }
+
+        public void Clear()
+        {
+            count = 0;
+        }
         
         public override string ToString()
         {
