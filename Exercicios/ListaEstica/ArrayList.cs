@@ -106,6 +106,30 @@ namespace C_.Exercicios.ListaEstica
             }
         }
 
+        public void Remove(T data)
+        {
+            try
+            {
+                bool controle = false;
+                for(int i = 0; i < count; i++)
+                {
+                    if (array[i].Equals(data) && !controle)
+                    {
+                        controle = true;
+                    }
+                    if (controle)
+                    {
+                        array[i] = array[i + 1];
+                    }
+                }
+                count--;
+            }
+            catch(IndexOutOfRangeException e)
+            {
+
+            }
+        }
+
         public override string ToString()
         {
             String s = "[";
