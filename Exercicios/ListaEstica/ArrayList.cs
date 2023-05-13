@@ -90,6 +90,22 @@ namespace C_.Exercicios.ListaEstica
             return false;
         }
         
+        public void Remove(int pos)
+        {
+            try
+            {
+                for(int i = pos; i < count; i++)
+                {
+                    array[i] = array[i + 1];
+                }
+                count--;
+            }
+            catch(IndexOutOfRangeException e)
+            {
+
+            }
+        }
+
         public override string ToString()
         {
             String s = "[";
