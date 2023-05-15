@@ -6,7 +6,7 @@
     <RootNamespace>C_</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>C_.Exercicios.ValidadorDeCpf.Validador</StartupObject>
+    <StartupObject>C_.Exercicios.ALendaDeFlaviousJosephus.Programa</StartupObject>
   </PropertyGroup>
 
 </Project>

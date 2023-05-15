@@ -9,60 +9,43 @@ namespace C_.Exercicios.ValidadorDeCpf
     internal class Validador
     {
 
+        public static int calculaVerificador(int peso, List<int> cpf)
+        {
+
+            int soma = 0, j = 0;
+
+            for(int i = peso; i > 1; i--)
+            {
+                soma += (cpf[j++] * i);
+            }
+
+            return (11 - (soma % 11) > 10) ? 0 : (11 - (soma % 11));
+
+        }
+
         public static bool validar(string Cpf)
         {
 
-            int numerosSomados = 0;
-            int peso = 10;
-            int soma = 0;
-            int primeiroDigitoVerificador = Convert.ToInt32(Convert.ToString(Cpf[9])), segundoDigitoVerificador = Convert.ToInt32(Convert.ToString(Cpf[10]));
-            int primeiroDigito, segundoDigito;
+            List<int> cpf = new List<int>();
 
-            for (int i = 0; i < Cpf.Length && numerosSomados < 9; i++)
+            foreach(char i in Cpf)
             {
-
-                if (char.IsDigit(Cpf[i]))
+                if (char.IsDigit(i) && cpf.Count < 11)
                 {
-                    soma += Convert.ToInt32(Convert.ToString(Cpf[i])) * peso--;
-                    numerosSomados++;
+                    cpf.Add(Convert.ToInt32(char.ToString(i)));
                 }
-
             }
 
-            primeiroDigito = 11 - (soma % 11);
+            int verificador = calculaVerificador(10, cpf);
 
-            if (primeiroDigito > 10)
-            {
-                primeiroDigito = 0;
-            }
-
-            if (primeiroDigitoVerificador != primeiroDigito)
+            if(verificador != cpf[9])
             {
                 return false;
             }
 
-            numerosSomados = 0;
-            peso = 11;
-            soma = 0;
-            for (int i = 0; i < Cpf.Length && numerosSomados < 10; i++)
-            {
+            verificador = calculaVerificador(11, cpf);
 
-                if (char.IsDigit(Cpf[i]))
-                {
-                    soma += Convert.ToInt32(Convert.ToString(Cpf[i])) * peso--;
-                    numerosSomados++;
-                }
-
-            }
-
-            segundoDigito = 11 - (soma % 11);
-
-            if (segundoDigito > 10)
-            {
-                segundoDigito = 0;
-            }
-
-            if (segundoDigitoVerificador != segundoDigito)
+            if(verificador != cpf[10])
             {
                 return false;
             }
