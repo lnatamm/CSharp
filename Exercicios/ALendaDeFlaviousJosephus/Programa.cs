@@ -37,10 +37,11 @@ namespace C_.Exercicios.ALendaDeFlaviousJosephus
         {
 
             int n = Convert.ToInt32(Console.ReadLine());
-
-            for(int i = 0; i < n; i++)
-            {
-                Console.WriteLine($"Case {i + 1}: {josephus(Convert.ToInt32(Console.ReadLine()), Convert.ToInt32(Console.ReadLine()))}");
+            
+            for (int i = 0; i < n; i++)
+            {   
+                string[] parts = Console.ReadLine().Split(' ');
+                Console.WriteLine($"Case {i + 1}: {josephus(Convert.ToInt32(parts[0]), Convert.ToInt32(parts[1]))}");
             }
 
         }
