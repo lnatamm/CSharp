@@ -29,7 +29,7 @@ namespace C_.Exercicios.ListaDinamica
             return head == null;
         }
 
-        public void add(T data)
+        public void Add(T data)
         {
             Node<T> node = new Node<T>(data);
             if(head == null)
@@ -46,7 +46,7 @@ namespace C_.Exercicios.ListaDinamica
             }
         }
 
-        public void add(int i,  T data)
+        public void Add(int i,  T data)
         {
 
             Node<T> node = new Node<T>(data);
