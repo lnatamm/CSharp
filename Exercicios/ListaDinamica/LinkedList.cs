@@ -156,9 +156,7 @@ namespace C_.Exercicios.ListaDinamica
 
         public void Remove(int i)
         {
-
             Node<T> aux = head;
-
             if (i == 0)
             { 
                 if (head == null)
@@ -195,6 +193,8 @@ namespace C_.Exercicios.ListaDinamica
             }
             count--;
         }
+
+
 
     }
 }
