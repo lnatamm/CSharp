@@ -194,7 +194,45 @@ namespace C_.Exercicios.ListaDinamica
             count--;
         }
 
+        public T Get(int i)
+        {
+            Node<T> aux = head;
+            for (int j = 0; j < i; j++)
+            {
+                aux = aux.getNext();
+            }
+            return aux.getData();
+        }
 
+        public int IndexOf(T n)
+        {
+            Node<T> aux = head;
+            int index = 0;
+            while (aux != null)
+            {
+                if (aux.getData().Equals(n))
+                {
+                    return index;
+                }
+                aux = aux.getNext();
+                index++;
+            }
+            return -1;
+        }
+
+        
+        public override string ToString()
+        {
+            Node<T> aux = head;
+            string s = "[";
+            while (aux.getNext() != null)
+            {
+                s += aux.getData() + ", ";
+                aux = aux.getNext();
+            }
+            s += aux.getNext().getData();
+            return $"{s}]";
+        }
 
     }
 }
