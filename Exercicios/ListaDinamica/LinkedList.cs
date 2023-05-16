@@ -100,5 +100,101 @@ namespace C_.Exercicios.ListaDinamica
 
         }
 
+        public void Clear()
+        {
+            head = null;
+            tail = null;
+            count = 0;
+        }
+
+        public bool Contains(T data)
+        {
+            Node<T> aux = head;
+            for(int i = 0; i < count; i++)
+            {
+                if (aux.getData().Equals(data))
+                {
+                    return true;
+                }
+                aux = aux.getNext();
+            }
+            return false;
+        }
+
+        public void Remove(T n)
+        {
+            Node<T> aux = head;
+            if (head.getData().Equals(n))
+            {
+                head = head.getNext();
+                if (head == null)
+                {
+                    tail = null;
+                }
+            }
+
+            else if (tail.getData().Equals(n))
+            {
+                while (aux.getNext() != tail)
+                {
+                    aux = aux.getNext();
+                }
+                aux.setNext(null);
+                tail = aux;
+            }
+
+            else
+            {
+                while (!aux.getNext().getData().Equals(n))
+                {
+                    aux = aux.getNext();
+                }
+                aux.setNext(aux.getNext().getNext());
+            }
+            count--;
+        }
+
+        public void Remove(int i)
+        {
+
+            Node<T> aux = head;
+
+            if (i == 0)
+            { 
+                if (head == null)
+                {
+                    throw new NullReferenceException();
+                }
+                else
+                {
+                    head = head.getNext();
+                    if (head == null)
+                    {
+                        tail = null;
+                    }
+                }
+            }
+            else if (i == count - 1)
+            {
+                while (aux.getNext() != tail)
+                {
+                    aux = aux.getNext();
+                }
+                tail = aux;
+            }
+            else
+            {
+                for (int j = 0; j < i; j++)
+                {
+                    if (j == (i - 1))
+                    {
+                        aux.setNext(aux.getNext().getNext());
+                    }
+                    aux = aux.getNext();
+                }
+            }
+            count--;
+        }
+
     }
 }
