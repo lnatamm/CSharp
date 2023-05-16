@@ -6,7 +6,7 @@
     <RootNamespace>C_</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>C_.Exercicios.ALendaDeFlaviousJosephus.Programa</StartupObject>
+    <StartupObject>C_.Exercicios.ListaDinamica.Teste</StartupObject>
   </PropertyGroup>
 
 </Project>

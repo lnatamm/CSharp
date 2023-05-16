@@ -225,12 +225,19 @@ internal class LinkedList<T>
     {
         Node<T> aux = head;
         string s = "[";
-        while (aux.getNext() != null)
+        try
         {
-            s += aux.getData() + ", ";
-            aux = aux.getNext();
+            while (aux.getNext() != null)
+            {
+                s += aux.getData() + ", ";
+                aux = aux.getNext();
+            }
+            s += aux.getData();
         }
-        s += aux.getNext().getData();
+        catch(NullReferenceException e)
+        {
+            return $"{s}]";
+        }
         return $"{s}]";
     }
 
